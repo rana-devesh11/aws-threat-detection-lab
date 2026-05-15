@@ -1,0 +1,24 @@
+# AWS Threat Detection Lab - Terraform Variables
+# Copy this file to terraform.tfvars and fill in your values
+
+# AWS region for deployment
+aws_region = "us-east-1"
+
+# Your email for resource tagging
+owner_email = "your.email@example.com"
+
+# Email to receive security alerts (can be same as owner_email)
+alert_email = "your.email@example.com"
+
+# Project name (used for resource naming)
+project_name = "threat-detection-lab"
+
+# Enable GuardDuty (30-day free trial, then ~$5-10/month)
+enable_guardduty = true
+
+# CloudTrail log retention in days
+cloudtrail_retention_days = 90
+
+# Optional: Slack webhook URL for notifications
+# Leave empty to disable Slack notifications
+slack_webhook_url = ""
