@@ -5,22 +5,6 @@ A practical AWS security monitoring and threat detection lab demonstrating detec
 **Author:** Devesh Rana  
 **Focus:** Cloud Security, Threat Detection, Security Engineering
 
-## Demo
-
-See real-time threat detection from attack simulation to email alert in 60-120 seconds:
-
-📹 **[View Complete Demo](demo/DEMO_OUTPUT.md)** - Full walkthrough with CloudTrail logs, Lambda execution, and email alerts  
-🎯 **12 Attack Scenarios** - IAM privilege escalation, root account activity, S3 exposure, credential abuse  
-⚡ **Live Detection** - EventBridge → Lambda → SNS pipeline with <2 minute latency
-
-```bash
-# Quick demo (requires AWS deployment)
-python3 simulations/iam_attacks.py --scenario privilege-escalation --cleanup
-# Check email for HIGH severity alert in 1-2 minutes
-```
-
-![Detection](https://img.shields.io/badge/Detection-60--120s_latency-green) ![MITRE](https://img.shields.io/badge/MITRE_ATT%26CK-T1078%2C_T1530-red) ![Cost](https://img.shields.io/badge/Cost-%245--10%2Fmonth-blue)
-
 ## Overview
 
 This lab implements a production-style threat detection pipeline in AWS, simulating real-world attack scenarios and demonstrating automated detection capabilities. The project maps detections to MITRE ATT&CK framework and implements event-driven response workflows.
